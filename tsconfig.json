@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": false,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "declaration" : true,
+    "outDir" : "out",
+    "target" : "es5",
+    "lib" : ["es2016","dom"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "Node",
+    "jsx": "react"
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
