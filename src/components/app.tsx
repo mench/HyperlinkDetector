@@ -57,9 +57,15 @@ export class App extends Component<any,any>{
         this.setState({
             loader:true
         });
-        request.get(this.state.data.url,(error, response, body:string)=>{
+        let options = {
+            gzip:true,
+            headers:{
+                "content-type":'text/html; charset=UTF-8'
+            }
+        };
+        request.get(this.state.data.url,options,(error, response, body:any)=>{
             if(!error){
-                let list = body.match(this.regex);
+                let list = body.match(this.regex) || [];
                 let array = [];
                 list.forEach(link=>{
                     if(link.indexOf(this.state.data.keyword.trim()) > -1){

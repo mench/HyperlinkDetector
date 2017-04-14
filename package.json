@@ -2,7 +2,7 @@
   "name": "HyperlinkDetector",
   "main": "app.js",
   "types": "out/system.d.ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Armen Harutyunyan <mench.harutyunyan@gmail.com>",
   "license": "MIT",
   "scripts": {
