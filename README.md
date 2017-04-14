@@ -1,0 +1,2 @@
+# HyperlinkDetector
+HyperlinkDetector Soft
